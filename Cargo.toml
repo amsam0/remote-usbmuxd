@@ -1,0 +1,18 @@
+[package]
+name = "remote-usbmuxd"
+description = """A program allowing you to forward packets to/from usbmuxd to another computer, allowing the devices connected on the that computer to appear connected on your computer.
+
+See <https://github.com/naturecodevoid/remote-usbmuxd> for usage instructions"""
+authors = ["naturecodevoid"]
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+env_logger = "0.10.0"
+log = "0.4.17"
+wrap-match = "1.0.2"
+tokio = { version = "1.28.0", features = ["full"] }
+clap = { version = "4.2.5", features = ["derive"] }
+const_format = "0.2.30"
